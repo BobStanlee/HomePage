@@ -281,11 +281,42 @@ footer {
 
 .footer__image {
     max-width: 375px;
-    margin: 2rem 2rem 8rem 2rem;
+    margin: 2rem;
 }
 
 .footer__image img {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+/* SCROLL UP */
+.scroll__up {
+    border: 2px solid var(--white-color);
+    padding: 0.5rem;
+    width: max-content;
+    justify-self: center;
+    margin-bottom: 8rem;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.scroll__up i {
+    animation: scrollUp 3s infinite;
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(.6rem);
+        opacity: 0;
+    }
 }
