@@ -74,6 +74,7 @@ main {
 .about {
     padding: 2rem;
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .about__img-container {
@@ -148,6 +149,7 @@ main {
 .projects {
     display: grid;
     row-gap: 2rem;
+    margin-bottom: 8rem;
 }
 
 .projects__container {
@@ -225,4 +227,65 @@ main {
 .project__header .links a i {
     font-size: 1.5rem;
     color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    display: grid;
+    row-gap: 1rem;
+}
+
+.footer__title {
+    font-size: var(--h1-font-size);
+    position: relative;
+    width: max-content;
+    margin: 2rem auto 0;
+    z-index: 1;
+}
+
+.footer__title::after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 0;
+    background-color: var(--white-color);
+    top: .2rem;
+    right: .1rem;
+    opacity: .5;
+}
+
+.footer__description {
+    padding: 2rem;
+}
+
+.footer__address {
+    padding: 2rem;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.footer__address .links-container {
+    margin-top: 1rem;
+}
+
+.footer__address .links-container .links-item .link {
+    border: 2px solid var(--white-color);
+}
+
+.footer__address .links-container .links-item .link i {
+    color: var(--white-color);
+}
+
+.footer__image {
+    max-width: 375px;
+    margin: 2rem 2rem 8rem 2rem;
+}
+
+.footer__image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
