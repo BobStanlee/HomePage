@@ -95,14 +95,14 @@ main {
     font-weight: 800;
 }
 
-.about__title {
+.about__title, .project__title {
     font-size: var(--h1-font-size);
     position: relative;
     width: max-content;
     margin: 2rem auto 0;
 }
 
-.about__title::after {
+.about__title::after, .project__title::after {
     content: '';
     position: absolute;
     width: 1.5rem;
